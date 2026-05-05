@@ -1,0 +1,29 @@
+@ShoppingCartApi_HostAddress = http://localhost:5083
+
+GET {{ShoppingCartApi_HostAddress}}/hello
+Accept: text/plain
+
+###
+POST {{ShoppingCartApi_HostAddress}}/cart
+Content-Type: application/json
+
+{
+  "userId": "alice"
+}
+
+###
+GET {{ShoppingCartApi_HostAddress}}/cart/alice
+Accept: application/json
+
+###
+PUT {{ShoppingCartApi_HostAddress}}/cart/alice
+Content-Type: application/json
+
+{
+  "items": [
+    { "productId": "p1", "quantity": 2 }
+  ]
+}
+
+###
+DELETE {{ShoppingCartApi_HostAddress}}/cart/alice
