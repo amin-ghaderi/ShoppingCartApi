@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+.cart-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+input,
+select,
+button {
+  font-size: 1rem;
+  padding: 0.6rem;
+}
+
+button {
+  margin-top: 1rem;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+.response {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 4px;
+  white-space: pre-wrap;
+}
+
+.response.success {
+  background-color: #ecfdf5;
+  border: 1px solid #6ee7b7;
+}
+
+.response.error {
+  background-color: #fef2f2;
+  border: 1px solid #fca5a5;
+}
+
+.response pre {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+
+.response ul {
+  margin: 0.25rem 0 0;
+  padding-left: 1.25rem;
+}

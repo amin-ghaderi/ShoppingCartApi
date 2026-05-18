@@ -27,6 +27,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 app.MapGet("/hello", () => Results.Text("API is running", "text/plain"));
 
 app.MapGet("/cart/{userId}", (string userId, GetCartUseCase useCase) =>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Shopping Cart</h1>
+
+    <form id="cart-form" class="cart-form">
+      <label for="userId">User ID</label>
+      <input
+        type="text"
+        id="userId"
+        name="userId"
+        placeholder="Enter user ID"
+        required>
+
+      <label for="product">Product</label>
+      <select id="product" name="product" required>
+        <option value="p1">p1 - BILLY Bookcase</option>
+        <option value="p2">p2 - MALM Bed Frame</option>
+        <option value="p3">p3 - KALLAX Shelf Unit</option>
+        <option value="p4">p4 - EKTORP Sofa</option>
+        <option value="p5">p5 - POÄNG Armchair</option>
+        <option value="p6">p6 - LACK Coffee Table</option>
+        <option value="p7">p7 - HEMNES Nightstand</option>
+        <option value="p8">p8 - STEFAN Chair</option>
+        <option value="p9">p9 - BEKVÄM Step Stool</option>
+        <option value="p10">p10 - FÖRNUFT Flatware Set</option>
+      </select>
+
+      <label for="quantity">Quantity</label>
+      <input
+        type="number"
+        id="quantity"
+        name="quantity"
+        min="1"
+        value="1"
+        required>
+
+      <button type="submit">Update Cart</button>
+    </form>
+
+    <section id="response" class="response" aria-live="polite"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
